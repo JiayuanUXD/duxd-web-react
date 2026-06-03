@@ -1,0 +1,25 @@
+.panel {
+  overflow: hidden;
+
+  > :global(.ddmc-card-body) {
+    padding: 0;
+    margin: -1px;
+  }
+}
+
+.card-grid {
+  :global(.ddmc-card-header) {
+    border: none;
+  }
+
+  &-title {
+    > * {
+      vertical-align: middle;
+    }
+
+    svg {
+      height: 20px;
+      margin-right: 8px;
+    }
+  }
+}
