@@ -78,3 +78,6 @@ package-lock.json
 __screenshots__
 
 .vscode/
+
+# MCP build artifacts
+api/component-metadata.json
