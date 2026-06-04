@@ -81,3 +81,4 @@ __screenshots__
 
 # MCP build artifacts
 api/component-metadata.json
+.vercel

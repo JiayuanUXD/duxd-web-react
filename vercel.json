@@ -1,5 +1,6 @@
 {
-  "buildCommand": "node scripts/extract-metadata.js",
+  "buildCommand": "NODE_OPTIONS=--openssl-legacy-provider yarn build:es && yarn build:css && node scripts/extract-metadata.js && npx build-storybook -o public",
+  "outputDirectory": "public",
   "functions": {
     "api/mcp.mjs": {
       "maxDuration": 30,
