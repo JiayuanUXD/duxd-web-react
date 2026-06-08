@@ -1,7 +1,7 @@
 {
   "name": "@ddmc/uxd-web-component",
-  "version": "1.0.2",
-  "description": "Ddmc Design React UI Library.",
+  "version": "1.0.3",
+  "description": "DUXD React UI Library.",
   "module": "./es/index.js",
   "main": "./lib/index.js",
   "unpkg": "./dist/ddmc.min.js",
@@ -57,13 +57,13 @@
   ],
   "homepage": "https://ddmc.design",
   "bugs": {
-    "url": "https://github.com/ddmc-design/ddmc-design/issues"
+    "url": "https://github.com/liujiayuan/web-react/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ddmc-design/ddmc-design.git"
+    "url": "git+http://git.ddxq.mobi/liujiayuan/web-react.git"
   },
-  "author": "DdmcDesign Team",
+  "author": "DUXD",
   "license": "MIT",
   "peerDependencies": {
     "react": ">=16",
