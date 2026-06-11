@@ -151,9 +151,20 @@ export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Expose-Headers', 'mcp-session-id');
 
+  if (req.method === 'GET') {
+    res.setHeader('Content-Type', 'application/json');
+    return res.status(200).json({
+      name: 'ddmc-design',
+      version: '1.0.0',
+      description: 'DDMC Design 组件库 MCP Server — 提供组件 API 查询和示例代码',
+      endpoint: 'POST /api/mcp',
+      tools: ['list_components', 'get_component', 'search_components', 'get_demo'],
+    });
+  }
+
   if (req.method !== 'POST') {
-    res.setHeader('Allow', 'POST, OPTIONS');
-    return res.status(405).json({ error: 'Method not allowed. Use POST for MCP requests.' });
+    res.setHeader('Allow', 'GET, POST, OPTIONS');
+    return res.status(405).json({ error: 'Method not allowed' });
   }
 
   const transport = new StreamableHTTPServerTransport({
